@@ -38,11 +38,11 @@ The frontend communicates with the backend API using JWT authentication and prov
 ## Project Structure
 ```
 src/
-api/ # API client
-components/ # Reusable UI components
-context/ # Authentication context
-pages/ # Login, Register, Dashboard
-routes/ # Protected routes
+api/
+components/
+context/
+pages/
+routes/
 App.jsx
 main.jsx
 ```
@@ -55,6 +55,7 @@ Create a `.env` file in the project root.
 
 Example:
 ```
+VITE_API_URL=http://localhost:5000
 ```
 
 An example file is provided:
@@ -68,12 +69,12 @@ An example file is provided:
 
 Clone the repository:
 ```
-git clone <your-frontend-repo-url>
+git clone https://github.com/IceManKR/RP-JTA-FrontEnd
 ```
 
 Navigate to the project folder:
 ```
-cd task-tracker-frontend
+cd RP-JTA-FrontEnd
 ```
 
 Install dependencies:
@@ -102,7 +103,5 @@ http://localhost:5173
 
 This frontend connects to the backend Task Tracker API.
 
-Backend Repository:
-```
-https://github.com/IceManKR/RP-JTA-FrontEnd
-```
+Backend Repository:  
+https://github.com/IceManKR/RP-JTA-Backend
