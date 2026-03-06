@@ -1,16 +1,108 @@
-# React + Vite
+# Task Tracker Frontend
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+## Overview
 
-Currently, two official plugins are available:
+This is the frontend application for the **Task Tracker System**.  
+It allows users to register, log in, and manage their tasks through a clean and responsive interface.
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react) uses [Babel](https://babeljs.io/) (or [oxc](https://oxc.rs) when used in [rolldown-vite](https://vite.dev/guide/rolldown)) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+The frontend communicates with the backend API using JWT authentication and provides a simple UI for task management.
 
-## React Compiler
+---
 
-The React Compiler is not enabled on this template because of its impact on dev & build performances. To add it, see [this documentation](https://react.dev/learn/react-compiler/installation).
+## Tech Stack
 
-## Expanding the ESLint configuration
+- React
+- Vite
+- Axios
+- React Router
+- CSS
 
-If you are developing a production application, we recommend using TypeScript with type-aware lint rules enabled. Check out the [TS template](https://github.com/vitejs/vite/tree/main/packages/create-vite/template-react-ts) for information on how to integrate TypeScript and [`typescript-eslint`](https://typescript-eslint.io) in your project.
+---
+
+## Features
+
+- User Registration
+- User Login
+- JWT Authentication
+- Protected Routes
+- Create Tasks
+- View Tasks
+- Update Task Status
+- Delete Tasks
+- Logout functionality
+- Error handling and validation
+- Responsive layout
+
+---
+
+## Project Structure
+```
+src/
+api/ # API client
+components/ # Reusable UI components
+context/ # Authentication context
+pages/ # Login, Register, Dashboard
+routes/ # Protected routes
+App.jsx
+main.jsx
+```
+
+---
+
+## Environment Variables
+
+Create a `.env` file in the project root.
+
+Example:
+```
+```
+
+An example file is provided:
+```
+.env.example
+```
+
+---
+
+## Installation
+
+Clone the repository:
+```
+git clone <your-frontend-repo-url>
+```
+
+Navigate to the project folder:
+```
+cd task-tracker-frontend
+```
+
+Install dependencies:
+```
+npm install
+```
+
+---
+
+## Running the Application
+
+Start the development server:
+
+```
+npm run dev
+```
+
+The application will run at:
+```
+http://localhost:5173
+```
+
+---
+
+## Backend API
+
+This frontend connects to the backend Task Tracker API.
+
+Backend Repository:
+```
+https://github.com/IceManKR/RP-JTA-FrontEnd
+```
